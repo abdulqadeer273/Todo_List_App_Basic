@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Todo List App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>My Enhanced Todo List</h1>
+        </header>
+        <main>
+            <section id="todo-form">
+                <h2>Add New Task</h2>
+                <form id="add-todo-form">
+                    <div class="form-group">
+                        <label for="todo-input">Task:</label>
+                        <input type="text" id="todo-input" name="todo-input" placeholder="Enter your task" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="priority">Priority:</label>
+                        <select id="priority" name="priority">
+                            <option value="low">Low</option>
+                            <option value="medium">Medium</option>
+                            <option value="high">High</option>
+                        </select>
+                    </div>
+                    <button type="submit">Add Task</button>
+                </form>
+            </section>
+            <section id="todo-list">
+                <h2>Tasks</h2>
+                <ul id="todos"></ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2023 Enhanced Todo List App</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
